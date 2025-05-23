@@ -11,9 +11,10 @@
         page_path: window.location.pathname,
       });
   </script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?">
+  <script src="./flashlight.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/img//apple-touch-icon.png?">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img//favicon-16x16.png?">
   <title> Darya Krasnyanskaya </title> 
 
   <link href="../path/to/src/pagedone.css" rel="stylesheet"/>
@@ -27,6 +28,8 @@
 </head>
 
 <body>
+  <div id="flashlight"></div>
+  <div class="container" id="container">
   <script src="../path/to/src/pagedone.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <div class="mx-auto min-h-screen-xl max-w-screen-xl px-6 font-sans md:px-12 md:py-16 lg:py-0">   
@@ -36,7 +39,7 @@
             <h1 class="font-bold uppercase tracking-tight sm:text-8xl"><p href="/">Darya</p>Krasnyanskaya (¯▿¯)｡.:*♡</h1>
             <h2 class="mt-2 font-bold tracking-tight">
               Frontend-разработчица из Санкт-Петербурга
-              <p>HTML CSS NODEJS REACT</p>
+              <p><div class="group flex items-center justify-between text-sm">HTML - CSS - NODE.JS - REACT</div> </p>
             </h2>
             <nav class="nav hidden lg:block" aria-label="In-page jump links">
               <ul class="mt-16 w-max">
@@ -56,6 +59,13 @@
                 </a>
               </li>
               <li class="mr-5 shrink-0 text-xs">
+                <a class="" href="https://career.habr.com/daryakras" target="_blank" rel="noreferrer noopener" aria-label="Habr (opens in a new tab)" title="Habr">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0,0,256,256" fill="currentColor">
+                    <g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M3,5v14c0,1.105 0.895,2 2,2h14c1.105,0 2,-0.895 2,-2v-14c0,-1.105 -0.895,-2 -2,-2h-14c-1.105,0 -2,0.895 -2,2zM8.268,6h2.476l0.018,4.345l0.354,-0.317c0.495,-0.436 0.911,-0.589 1.699,-0.618c0.519,-0.015 0.73,0.006 1.093,0.135c0.797,0.267 1.36,0.815 1.653,1.623c0.114,0.317 0.129,0.647 0.15,3.214l0.024,2.868h-2.505v-2.341c0,-2.306 -0.006,-2.335 -0.161,-2.616c-0.22,-0.372 -0.457,-0.542 -0.832,-0.583c-0.638,-0.07 -1.081,0.146 -1.333,0.668c-0.12,0.24 -0.135,0.492 -0.141,2.517c-0.009,1.236 -0.024,2.329 -0.024,2.356h-2.467"></path></g></g>
+                  </svg>
+                </a>
+              </li>
+              <li class="mr-5 shrink-0 text-xs">
                 <a class="" href="https://github.com/Darya-kras" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)" title="GitHub">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6" aria-hidden="true">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -69,10 +79,10 @@
         <section class="py-2.5 mt-2 text-sm max-w-xs font-bold leading-normal" id="About">
           <h2 class="font-bold uppercase tracking-widest lg:sr-only">Немного обо мне...</h2>
           <p class="abz">
-             Я занимаюсь разработкой комфортных и функциональных пользовательских интерфейсов.
+             Я занимаюсь разработкой комфортных и функицональных пользовательских интерфейсов.
           </p>
           <p class="abz">
-             До недавнего времени это было лишь моё хобби, однако первые коммерческие задачи 
+             До недавнего времени это было лишь моё хобби, однако первые комерческие задачи 
              ускорили моё погружение в профессию.
           </p>
           <p class="abz">
@@ -96,7 +106,7 @@
             </div>
             <div class="Exp1"></div>
               <div class="ExpEx text-sm rounded-lg font-semibold"  id="APRIL-MAY">
-                <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide sm:col-span-2" aria-label="2024 to Present">APRIL-MAY 2024</header>
+                <header class="ExpHead z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide sm:col-span-2" aria-label="2024 to Present">APRIL-MAY 2024</header>
                 <p class="px-5 text-xs">
                   Ко мне обратился индивидуальный предприниматель с запросом сайта для оформлений
                   заказов на его изделия. Разработка велась полностью мной. 
@@ -106,21 +116,53 @@
         <section id="projects">
           <div class="Exp">
             <h2 class="text-sm font-bold uppercase">Projects</h2>
-            <div class="Exp1"></div>
-              <div class="ExpEx text-sm rounded-lg font-semibold"  id="A">
-                <div class="projects">
-                  <img src="./" alt="*PHOTO*" class="photo">
-                  <div>
-                    <header class="text-xs font-semibold uppercase tracking-wide sm:col-span-2" aria-label="Project1"> BLAZHENOV MARKET</header>
+            <div class="Exp1">
+              <div class="ExpEx text-sm font-semibold"  id="A">
+                <a href="https://github.com/Darya-kras/SW_API" target="_blank" class="project">
+                  <img src="/img/SW.jpg" alt="*PHOTO*" class="photo"> 
+                  <div class="info">
+                    <h1 class="text-sm"> 
+                      Star Wars Characters List
+                    </h1>
                     <p class="">
-                      Сайт для заказа уникальных изделий.
+                      Тестовое задание включающее работу с API и LocalStorage.
                     </p>
-                </div>
-                </div>
+                  </div>
+                </a>
               </div>
+              <a href="https://github.com/Darya-kras/SW_API" class="SRC">
+                 <span>REACT</span>
+                 <span>JS</span>
+                 <span>HTML</span>
+                 <span>CSS</span>
+              </a>
             </div>
+            <div class="Exp2">
+              <div class="ExpEx text-sm font-semibold"  id="A">
+                <a href="https://github.com/Darya-kras/SW_API" target="_blank" class="project">
+                  <img src="/img/SW.jpg" alt="*PHOTO*" class="photo"> 
+                  <div class="info">
+                    <h1 class="text-sm"> 
+                        EgorCraftman Market
+                    </h1>
+                    <p class="">
+                      Сайт для оформления заказов изделий по индивидуальному дизайну.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <a href="https://github.com/Darya-kras/SW_API" class="SRC">
+                 <span>REACT</span>
+                 <span>JS</span>
+                 <span>HTML</span>
+                 <span>CSS</span>
+              </a>
+            </div>
+          </div>
+
 
         </section> 
       </div>
+</div>
 </body>
 </html>
