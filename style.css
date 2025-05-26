@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
 html{
-  width: 100%;
-  height: 100%;
-  min-width: 200px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1.5rem;
@@ -32,33 +28,57 @@ body {
 }
 
 @media(min-width: 1024px) {
-    #ExpHead { 
-      background-color: #ffffff00;
-      background: linear-gradient( #ffffff00, #ff325134);
-      border-right: #e3ceef2f;
-      border-top: #ffffff00;
-      border-bottom: #ff000000;
-    }
-    #flashlight {
-      pointer-events: none;
-      
-      position: fixed;
-      left: -100%;
-      top: -100%;
-      z-index: -10px;
-  
-      height: 300%;
-      width: 300%;
-  
-      background: radial-gradient(circle at 50% 50%, rgba(255, 163, 207, 0.056) 5%, rgba(0, 0, 0, 0.062) 12%); /*comment that to see all screen*/
-      filter: blur(20px);
+  html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    background-image: URL("./img/maxresdefault.jpg");
+    background-size:cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #e3ceef;
+    position: absolute; 
+  } 
+  :root {
+    --deg: 1;
+    --x: -50%;
+    --y: -50%;
+  }
+  body {
+    width: 100%;
+    background: radial-gradient( #110a0f9e, #2c272bb7 );
+    background-size:cover;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }   
+  #ExpHead { 
+    background-color: #ffffff00;
+    background: linear-gradient( #ffffff00, #ff325134);
+    border-right: #e3ceef2f;
+    border-top: #ffffff00;
+    border-bottom: #ff000000;
+  }
+  #flashlight {
+    pointer-events: none;    
+    position: fixed;
+    left: -100%;
+    top: -100%;
+    z-index: -10px;
+    height: 300%;
+    width: 300%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 163, 207, 0.056) 5%, rgba(0, 0, 0, 0.062) 12%); /*comment that to see all screen*/
+    filter: blur(20px);
 
-      transition: 
-        left .5s ease-in-out,
-        top .5s ease-in-out,
-        height .5s ease-in-out,
-        width .5s ease-in-out;
-    }
+    transition: 
+      left .5s ease-in-out,
+      top .5s ease-in-out,
+      height .5s ease-in-out,
+      width .5s ease-in-out;
+  }
 } 
 
 html::before{
@@ -136,23 +156,90 @@ h1{
       border-width: 2px;
       box-shadow: 40px 0px 30px 0px #00000081;
     }
+
 } 
 .block2::before{
   background-image: url(./img/BG.png);
   position: fixed;
 }
-
 ::-webkit-scrollbar {
   overflow: hidden;
 }
+@media(min-width: 590px) {
+    .Exp{
+      min-width: 500px;
+      padding-block-start: 13%;
+      margin-top: 10px;
+    }
+    .Exp1{
+      padding-block-start: 7%;
+    }
+    .ExpEx{
+      display: none;
+      margin-top: 10%;
+      border-width: 10px;
+      border-radius: 10px;
+      border: 10px;
+      border-color:white;
+      border-bottom: #3a003600;
+      align-content: center;
+      justify-content: center;
+      cursor: pointer;
+      background: #2e182800;
+      transition: 0.5s;
+    }
+    .ExpEx:hover{
+      border-color:white;
+      background: #845e7999;
+    }
+    .project{
+      min-width: none;
+      display:list-item;
+      padding: 10px 5px 10px 5px;
+      border-width: 1px;
+      border-color: #ffffffbe;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-size: 68%;
+      display: flex;
+      justify-content:center;
+    }
+    .SRC{
+      display: list-item;
+      border-width: 1px;
+      border-color: #ffffffbe;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      font-size: 68%;
+      justify-content: space-around;
+    } 
+    span #SRC {
+      color: #ffffff;
+    }
+    .photo{
+      border-width: 1px;
+      border-color: #ffffffbe;
+      border-radius: 10px;
+      width: 8rem;
+      height: 5rem;
+    }
+    .info{
+      padding-left: 10px;
+    }
+}
+/*проекты с мобилок*/
 .Exp{
+  max-width: min-content;
   padding-block-start: 13%;
   margin-top: 10px;
+  justify-content: center;
 }
 .Exp1{
+  
   padding-block-start: 7%;
 }
 .ExpEx{
+  display: flex;
   margin-top: 10%;
   border-width: 10px;
   border-radius: 10px;
@@ -169,25 +256,26 @@ h1{
 border-color:white;
 background: #845e7999;
 }
-
+.Projects {
+  padding: 0rem 0rem 0rem 1.5rem;
+  justify-content: center;
+}
 .project{
-  display:list-item;
+  min-width: 300px;
   padding: 10px 5px 10px 5px;
   border-width: 1px;
   border-color: #ffffffbe;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-size: 68%;
-  display: flex;
   justify-content:center;
 }
 .SRC{
+  display: flex;
   border-width: 1px;
   border-color: #ffffffbe;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-size: 68%;
-  display: flex;
   justify-content: space-around;
 }
 span #SRC {
@@ -201,6 +289,7 @@ span #SRC {
   height: 5rem;
 }
 .info{
-padding-left: 10px;
+  padding-left: 10px;
 }
+
 
