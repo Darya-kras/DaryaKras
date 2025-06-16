@@ -87,9 +87,7 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-footer{
-    display: none;
-}
+
 /*Заголовок и навигация*/
 header{
     display: inline;
@@ -283,20 +281,5 @@ span #SRC {
         display: inline;
         justify-content: start;
     }
-    footer{
-        display: none;
-        position: fixed;
-        padding: 1px;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        height: 20px;
-        font-size: 7px;
-        align-items: center;
-        justify-content: center ;
-        flex-direction: column;
-        color: black;
-        background-color: var(--main-text-color);
-        z-index: 10;
-    }
+    
 }
