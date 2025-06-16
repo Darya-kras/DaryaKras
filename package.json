@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "pagedone": "^1.2.2"
+    "@tailwindcss/vite": "^4.1.4",
+    "jquery": "^3.7.1",
+    "pagedone": "^1.2.2",
+    "prefixfree": "^1.0.0",
+    "tailwindcss": "^4.1.4"
   }
 }
