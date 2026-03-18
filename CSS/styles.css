@@ -320,6 +320,7 @@ display: block;
 section {
     min-height: 100vh;
     height: fit-content;
+    flex-direction: column;
     align-items: center;
 }
 .otsst{
@@ -370,13 +371,9 @@ h2::before {
     z-index: -1;
 }
 
-.projects_section{
-    padding-top: 2em;
-    justify-content: center; 
-    align-items: center; 
-}
 .projects {
     flex-direction: column;
+    width: 100%;
 }
 
 a, a:hover, a:active {
@@ -422,6 +419,43 @@ a, a:hover, a:active {
     margin-top: 2em;
     justify-content: center;
     align-items: center;
+    transition: 1s ease;
+}
+@media (min-width: 2000px){
+    h1 {
+        font-size: 5em;
+    }
+    nav a {
+        font-size: 2.5em;
+    }
+    .project {
+        width: 50%;
+        margin-top: 10em;
+        justify-content: space-between;
+    }
+    .proj_inf{
+        font-size: 3em;
+    }
+    .proj_inf h3{
+        font-size: 2.5em;
+    }
+    .contacts p{
+        font-size: 2em;
+    }
+    .text__about p {
+        font-size: 1.7rem;
+    }
+    .content__about{
+        width: 70%;
+        margin-top: 5%;
+    }
+    .skills__item {
+        font-size: 1.2em;
+        width: 10em;
+    }
+    img {
+        width: 6em;
+    }
 }
 .proj_img{
     border: solid #23a6d5;
@@ -468,6 +502,7 @@ a, a:hover, a:active {
     color: white;
     background-color: #33333300;
     margin: auto;
+    font-size: 1em;
     padding: 20px;
     height: 30vh;
 }
