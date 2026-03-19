@@ -391,6 +391,7 @@ a, a:hover, a:active {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    margin-top: 1em;
     gap: 20px;
 }
 .proj_inf{
